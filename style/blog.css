@@ -15,11 +15,21 @@
     mix-blend-mode: normal;
 }
 .blog-li__tetx {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
     width: 380px;
     color: #1E0606;
 }
 .blog_text1 {
     margin-top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
 }
 .pagination {
     margin-top: 50px;
