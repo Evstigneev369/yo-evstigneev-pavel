@@ -256,8 +256,42 @@
 
 
 /* styles for footer */
+.footer {
+    background: #434343;
+    margin-top: 150px;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__sect {
+   margin-top: 100px;
+}
+.footer__title {
+    color: #AAAAAA;
+    margin-bottom: 52px;
+}
+.footer__ul {
+    
+}
+.footer__link {
+    margin-top: 11px;
+    color: #FFFFFF;
+}
+.connect__ul {
+    display: flex;
+    margin-top: 25px;
+}
+.connect__li {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #666666;
+    border-radius: 15px;
+}
 
 
+/* styles for pop-up */
 .popup {
     position: fixed;
     top: 0;
@@ -293,7 +327,6 @@
     display: flex
 }
 .popup-close {
-
 }
 .popup__title {
     display: none;

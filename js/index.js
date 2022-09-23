@@ -13,8 +13,8 @@ popupclose.addEventListener('click', function() {
 })
 
 window.addEventListener('keydown', function(event) {
-    if (event.code === "escape" && popup.classList.contains(popup-open)) {
-        popup.classList.remove('popup-open')
-        popupbtn.focus()
+    if (event.key === "escape" && popup.classList.contains("popup-open")) {
+        popup.classList.remove('popup-open');
+        console.logo("Закрытие формы")
     }
 })
