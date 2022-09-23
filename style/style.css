@@ -234,8 +234,24 @@
     align-items: center;
     justify-content: center;
 }
+.popup__wrap {
+    position: relative;
+}
+.popup__cross {
+    position: absolute;
+    left: 688px;
+    background: none;
+    background-image: url(../static/icons/closing_cross.svg);
+    background-repeat: no-repeat;
+    border: none;
+    width: 35px;
+    height: 35px;
+}
 .popup-open {
     display: block;
+}
+.popup-close {
+
 }
 .popup__title {
     display: none;
