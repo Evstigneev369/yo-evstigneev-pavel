@@ -257,6 +257,7 @@
 
 /* styles for footer */
 .footer {
+    height: 555px;
     background: #434343;
     margin-top: 150px;
 }
@@ -271,23 +272,44 @@
     color: #AAAAAA;
     margin-bottom: 52px;
 }
-.footer__ul {
-    
+.footer__li {
+    margin-top: 15px;
 }
 .footer__link {
-    margin-top: 11px;
     color: #FFFFFF;
 }
+/* .cnt-form__wrap {
+    display: flex;
+    width: 380px;
+}
+.cnt-form__input {
+    padding-left: 15px;
+    color: #EBEBEB;
+    background: #666666;
+} */
 .connect__ul {
     display: flex;
     margin-top: 25px;
 }
 .connect__li {
     margin-right: 10px;
+    padding: 5px;
+    text-align: center;
     width: 30px;
     height: 30px;
     background: #666666;
     border-radius: 15px;
+}
+.bottom-row__wrap {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.b-r__link {
+    color: #FFFFFF;
+}
+.b-r__text {
+    color: #A2A2A2;
 }
 
 

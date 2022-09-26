@@ -188,7 +188,7 @@ a {
     margin-top: 3px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-::-webkit-input-placeholder {
+::-webkit-input-placeholder{ 
     color: #1E0606;
 }
 .field__wrap {

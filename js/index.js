@@ -13,7 +13,7 @@ popupclose.addEventListener('click', function() {
 })
 
 window.addEventListener('keydown', function(event) {
-    if (event.key === "escape" && popup.classList.contains("popup-open")) {
+    if (event.key === "Escape" && popup.classList.contains("popup-open")) {
         popup.classList.remove('popup-open');
         console.logo("Закрытие формы")
     }
