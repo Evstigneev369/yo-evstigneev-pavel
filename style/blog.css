@@ -23,6 +23,9 @@
     width: 380px;
     color: #1E0606;
 }
+.blog-li__tetx:hover {
+    text-decoration: underline;
+}
 .blog_text1 {
     margin-top: 15px;
     font-family: 'Open Sans';
