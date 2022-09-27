@@ -47,6 +47,7 @@
     background-image: url(../static/icons/vector_pagination_1.svg);
     width: 19px;
     height: 31px;
+    
 }
 .pagination_vector:hover {
     color: #C29974;
@@ -59,6 +60,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 }
 .span_nb:hover {
     color: #C29974;
