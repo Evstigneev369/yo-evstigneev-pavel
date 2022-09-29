@@ -44,13 +44,11 @@
     justify-content: space-between;
 }
 .pagination_vector {
-    background-image: url(../static/icons/vector_pagination_1.svg);
     width: 19px;
     height: 31px;
-    
 }
-.pagination_vector:hover {
-    color: #C29974;
+.pagination_vector svg:hover {
+    fill: #C29974;
 }
 .pag_ul {
     display: flex;
