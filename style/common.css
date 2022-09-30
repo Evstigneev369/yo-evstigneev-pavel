@@ -294,8 +294,9 @@ input:disabled {
 .processing_text {
     cursor: pointer;
 }
-.processing_text:hover {
-    border-bottom: 1px solid #1E0606;
+.input_processing, .processing_text:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .input_processing+.processing_text::before {
     content: ''; 

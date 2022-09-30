@@ -331,6 +331,12 @@
     background: #666666;
     border-radius: 15px;
 }
+.connect__img:hover {
+    opacity: 0.5;
+}
+.connect__img:active {
+    opacity: 0.2;
+}
 .upper__line {
     border-top: 1px solid #666666;
     padding-top: 23px;
@@ -354,39 +360,56 @@
 
 /* style for a star rating */
 .rating-area {
-	overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
 }
-.rating-area:not(:checked) > input {
+.rating__input {
+    position: relative;
+}
+.rating__label {
+}
+.rating-area:not(:checked) > .rating__input {
 	display: none;
 }
-.rating-area:not(:checked) > label {
+.rating-area:not(:checked) > .rating__label {
 	cursor: pointer;
 	font-size: 32px;
 	line-height: 32px;
 	color: #FFFFFF;
-	text-shadow: 1px 1px #bbb;
 }
-.rating-area:not(:checked) > label:before {
-	content: '★';
+.rating-area:not(:checked) > .rating__label:before {
+	content: url(../static/icons/star.svg);
 }
-.rating-area > input:checked ~ label {
+.rating-area:not(:checked) > .rating__label:before:hover {
+	content: url(../static/icons/star_hover.svg);
+}
+.rating-area > .rating__input:checked ~ .rating__label {
+    background-image: url(../static/icons/star_hover.svg);
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > la.rating__labelbel:hover,
+.rating-area:not(:checked) > .rating__label:hover ~ .rating__label {
+    background-image: url(../static/icons/star_hover.svg);
+    background-repeat: no-repeat;
 	color: gold;
-	text-shadow: 1px 1px #c60;
 }
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-	color: gold;
-}
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
+.rating-area > .rating__input:checked + .rating__label:hover,
+.rating-area > .rating__input:checked + .rating__label:hover ~ .rating__label,
+.rating-area > .rating__input:checked ~ .rating__label:hover,
+.rating-area > .rating__input:checked ~ .rating__label:hover ~ .rating__label,
+.rating-area > .rating__input:hover ~ .rating__input:checked ~ .rating__label {
+    background-image: url(../static/icons/star_hover.svg);
+    background-repeat: no-repeat;
 	color: gold;
 	text-shadow: 1px 1px goldenrod;
 }
-.rate-area > label:active {
+.rate-area > .rating__label:active {
 	position: relative;
+}
+.rating__text {
+    color: #FFFFFF;
 }
 
 
@@ -420,6 +443,13 @@
     width: 35px;
     height: 35px;
     cursor: pointer;
+}
+.popup__cross:hover {
+   opacity: 0.7;
+
+}
+.popup__cross:active {
+    opacity: 0.4;
 }
 .popup-open {
     display: -webkit-box;
