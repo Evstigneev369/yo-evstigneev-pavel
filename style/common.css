@@ -161,11 +161,6 @@ input:disabled {
 .contact__wrapper {
     margin-left: auto;
 }
-.search__btn {
-    background-image: url(../static/icons/search.svg);
-    width: 17px;
-    height: 17px;
-}
 .search__btn :hover {
     opacity: 0.5;
 }
