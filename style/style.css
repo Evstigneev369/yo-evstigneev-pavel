@@ -291,10 +291,10 @@
     color: #FFFFFF;
 }
 .footer__link:hover {
-    color: #959595;
+    opacity: 0.5;
 }
 .footer__link:active {
-    color: #4c4c4c;
+    opacity: 0.2;
 }
 .cnt-form__wrap {
   display: flex;
@@ -380,6 +380,7 @@
 }
 .rating-area:not(:checked) > .rating__label:before {
 	content: url(../static/icons/star.svg);
+    padding-right: 3px;
 }
 .rating-area:not(:checked) > .rating__label:before:hover {
 	content: url(../static/icons/star_hover.svg);
@@ -410,6 +411,7 @@
 }
 .rating__text {
     color: #FFFFFF;
+    margin-right: 25px;
 }
 
 

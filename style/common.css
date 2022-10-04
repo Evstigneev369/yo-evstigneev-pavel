@@ -153,10 +153,10 @@ input:disabled {
     text-transform: uppercase;
 }
 .nav__list_link:hover {
-    color: #8e8282;
+    opacity: 0.5;
 }
 .nav__list_link:active {
-    color: #d2cdcd;
+    opacity: 0.1;
 }
 .contact__wrapper {
     margin-left: auto;
@@ -178,10 +178,10 @@ input:disabled {
     margin-left: 24px;
 }
 .nav__contact:hover {
-    color: #8e8282;
+    opacity: 0.5;
 }
 .nav__contact:active {
-    color: #d2cdcd;
+    opacity: 0.1;
 }
 
 
@@ -202,6 +202,9 @@ input:disabled {
     cursor: pointer;
 }
 .catalog__item:hover {
+    text-decoration: underline;
+}
+.catalog__item:active {
     text-decoration: underline;
 }
 
@@ -230,6 +233,67 @@ input:disabled {
     color: #1E0606;
     opacity: 0.5;
 }
+
+
+/* styles for pagination */
+.pagination {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.pagination__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pagination_vector {
+    background-image: url(../static/icons/vector_pagination_1.svg);
+    width: 19px;
+    height: 31px;
+}
+.pagination_vector:hover {
+    background-image: url(../static/icons/vector_pagination_hover.svg);
+    width: 19px;
+    height: 31px; 
+    transform: rotate(180deg);
+}
+.pagination_vector:active {
+    background-image: url(../static/icons/vector_pagination_active.svg);
+    width: 19px;
+    height: 31px; 
+    transform: rotate(180deg);
+}
+.pag_ul {
+    display: flex;
+}
+.span_nb {
+    padding: 64px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.span_nb:hover {
+    color: #C29974;
+}
+.pagination_vector1 {
+    background-image: url(../static/icons/vector_pagination_2.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 31px;
+}
+.pagination_vector1:hover {
+    background-image: url(../static/icons/vector_pagination_hover.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 31px;
+}
+.pagination_vector1:active {
+    background-image: url(../static/icons/vector_pagination_active.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 31px;
+}
+
 
 
 /* styles for contact us and pop-up */
