@@ -359,60 +359,64 @@
 
 
 /* style for a star rating */
-.rating-area {
+.rating {
+    margin-left: 0;
+    width: 380px;
+    height: 22px;
+    align-items: center;
     display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
-}
-.rating__input {
     position: relative;
-}
-.rating__label {
-}
-.rating-area:not(:checked) > .rating__input {
-	display: none;
-}
-.rating-area:not(:checked) > .rating__label {
-	cursor: pointer;
-	font-size: 32px;
-	line-height: 32px;
-	color: #FFFFFF;
-}
-.rating-area:not(:checked) > .rating__label:before {
-	content: url(../static/icons/star.svg);
-    padding-right: 3px;
-}
-.rating-area:not(:checked) > .rating__label:before:hover {
-	content: url(../static/icons/star_hover.svg);
-}
-.rating-area > .rating__input:checked ~ .rating__label {
-    background-image: url(../static/icons/star_hover.svg);
-    background-repeat: no-repeat;
-    text-shadow: 1px 1px #c60;
-}
-.rating-area:not(:checked) > la.rating__labelbel:hover,
-.rating-area:not(:checked) > .rating__label:hover ~ .rating__label {
-    background-image: url(../static/icons/star_hover.svg);
-    background-repeat: no-repeat;
-	color: gold;
-}
-.rating-area > .rating__input:checked + .rating__label:hover,
-.rating-area > .rating__input:checked + .rating__label:hover ~ .rating__label,
-.rating-area > .rating__input:checked ~ .rating__label:hover,
-.rating-area > .rating__input:checked ~ .rating__label:hover ~ .rating__label,
-.rating-area > .rating__input:hover ~ .rating__input:checked ~ .rating__label {
-    background-image: url(../static/icons/star_hover.svg);
-    background-repeat: no-repeat;
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
-}
-.rate-area > .rating__label:active {
-	position: relative;
-}
-.rating__text {
-    color: #FFFFFF;
+  }
+  .rating:hover .rating__company {
+    color: #C29974;;
+  }
+  .rating:checked .rating__company {
+    color: #C29974;
+  }
+  .rating__company {
+    float: left;
     margin-right: 25px;
-}
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .rating__group {
+    position: absolute;
+    bottom: 0;
+    left: 148px;
+    width: 82px;
+    height: 16px;
+    background-image: url(../static/icons/star.svg);
+    background-size: 17px 16px;
+    float: left;
+  }
+  .rating__input {
+    appearance: none;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    margin: 0;
+    bottom: 0;
+    height: 16px;
+    font-size: inherit;
+    background-size: 17px 16px;
+    background-repeat: space repeat-x ;
+    cursor: pointer; 
+  }
+  .rating__input:focus {
+    outline: none;
+  }
+  .rating__input:checked {
+    background-image: url(../static/icons/star_checked.svg);
+    background-size: 17px 16px;
+    transition: 0.2s;
+  }
+  .rating__input:hover {
+    background-image: url(../static/icons/star_hover.svg);
+    transition: 0.2s;
+  }
+  .rating__input:hover~.rating__input {
+    background-image: url(../static/icons/star.svg);
+  }
 
 
 /* styles for pop-up */
