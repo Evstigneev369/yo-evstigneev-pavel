@@ -1,7 +1,8 @@
 /* styles for the main content */
-.contact__from {
+.section__contact_us {
     display: flex;  
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .contact__wrap {
     width: 380px;

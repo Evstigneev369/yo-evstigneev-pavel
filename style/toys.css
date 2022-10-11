@@ -1,20 +1,51 @@
 
-.back__background {
+.preferences__background {
     height: 254px;
     background: rgba(125, 151, 218, 0.2);
     margin-bottom: 60px;
 }
-.t-inputs__wrap {
+.preferences__wrap {
     display: flex;
 }
-.fieldset__wrap {
+.preferences__fieldset {
     border: none;
 }
-.input__black {
-    position: absolute; 
-    z-index: -1; 
-    opacity: 0; 
+.backdrop__checkbox+label::before{
+    background: #FFFFFF;
 }
+.radio__wrap {
+    margin-bottom: 10px;
+    position: relative;
+}
+.radio__label::before {
+    content: ''; 
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.radio__label::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #C29974;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+
 .t-c__ul {
     display: flex;
     flex-wrap: wrap;
@@ -63,4 +94,5 @@
 .t-c__text1 {
     margin-top: 15px;
     text-align: center;
+    text-transform: uppercase;
 }
