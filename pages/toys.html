@@ -68,62 +68,68 @@
                 <div class="container">
                     <div class="preferences__wrap">
                         <fieldset class="preferences__fieldset">
-                            <legend  class="preferences__appellation">Color</legend>
-                            <div>
+                            <legend  class="preferences__appellation open_sans2">Cost</legend>
+                            <input type="range" class="range__input">
+                        </fieldset>
+
+                        <fieldset class="preferences__fieldset">
+                            <legend  class="preferences__appellation open_sans2">Color</legend>
+                            <div class="preferences__input__wrap">
                               <input type="checkbox" id="color-black" class="custom__checkbox backdrop__checkbox" checked>
-                              <label for="color-black">Black</label>
+                              <label for="color-black" class="checkbox__label open_sans">Black</label>
                             </div>
                         
-                            <div>
+                            <div class="preferences__input__wrap">
                               <input type="checkbox" id="color-blue" class="custom__checkbox">
-                              <label for="color-blue">Blue</label>
+                              <label for="color-blue" class="checkbox__label open_sans">Blue</label>
                             </div>
 
-                            <div>
+                            <div class="preferences__input__wrap">
                                 <input type="checkbox" id="color-green" class="custom__checkbox">
-                                <label for="color-green">Green</label>
+                                <label for="color-green" class="checkbox__label open_sans">Green</label>
                               </div>
 
-                              <div>
+                              <div class="preferences__input__wrap">
                                 <input type="checkbox" id="color-white" class="custom__checkbox">
-                                <label for="color-white">White</label>
+                                <label for="color-white" class="checkbox__label open_sans">White</label>
                               </div>
                         </fieldset>
 
                         <fieldset class="preferences__fieldset">
-                            <legend class="preferences__appellation">Delivery</legend>
-                            <div class="radio__wrap">
+                            <legend class="preferences__appellation open_sans2">Delivery</legend>
+                            <div class="preferences__input__wrap">
                                 <input type="radio" id="delivery-free" class="input__radio" name="delivery">
-                                <label for="delivery-free" class="radio__label">Free shipping</label>
+                                <label for="delivery-free" class="radio__label open_sans">Free shipping</label>
                               </div>
                           
-                              <div class="radio__wrap">
-                                <input type="radio" id="delivery-fast" class="input__radio" checked name="delivery">
-                                <label for="delivery-fast" class="radio__label">Fast shipping</label>
+                              <div class="preferences__input__wrap">
+                                <input type="radio" id="delivery-fast" class="input__radio" name="delivery" checked>
+                                <label for="delivery-fast" class="radio__label open_sans">Fast shipping</label>
                               </div>
                         </fieldset>
 
                         <fieldset class="preferences__fieldset">
-                            <legend class="preferences__appellation">Amount</legend>
-                            <div>
-                                <input type="radio" id="amount-small" class="input__small">
-                                <label for="amount-small" class="label__small">0-5</label>
+                            <legend class="preferences__appellation open_sans2">Amount</legend>
+                            <div class="preferences__amount__wrap">
+                                <input type="radio" id="amount-small" class="radio__amount" name="amount" checked>
+                                <label for="amount-small" class="label__amount lengthening open_sans">0-5</label>
                               </div>
                           
-                              <div>
-                                <input type="radio" id="amount-average" class="input__average" checked>
-                                <label for="amount-average" class="label__average">10-20</label>
+                              <div class="preferences__amount__wrap">
+                                <input type="radio" id="amount-average" class="radio__amount" name="amount">
+                                <label for="amount-average" class="label__amount open_sans">10-20</label>
                               </div>
     
-                              <div>
-                                <input type="radio" id="amount-large" class="input__large" checked>
-                                <label for="amount-large" class="label__large">20-50</label>
+                              <div class="preferences__amount__wrap">
+                                <input type="radio" id="amount-large" class="radio__amount" name="amount">
+                                <label for="amount-large" class="label__amount open_sans">20-50</label>
                               </div>
                         </fieldset>
                     </div>
                     <button class="botton__link open_sans2" type="button">apply</button>
                 </div>
             </section>
+
 
             <div class="container">
                 <section class="toy__category">

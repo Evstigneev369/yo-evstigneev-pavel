@@ -97,16 +97,18 @@ input:disabled {
     padding: 0;
     box-sizing: border-box;
 }
-.custom__checkbox, .input__radio {
+.custom__checkbox, .input__radio, .radio__amount {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
-.custom__checkbox, .input__radio, label:hover {
+.custom__checkbox, 
+.input__radio, 
+.checkbox__label:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.custom__checkbox+label::before {
+.custom__checkbox+.checkbox__label::before {
     content: ''; 
     display: inline-block; 
     width: 19px;
@@ -116,7 +118,7 @@ input:disabled {
     margin-right: 15px; 
     cursor: pointer;
 }
-.custom__checkbox:checked+label::before {
+.custom__checkbox:checked+.checkbox__label::before {
     background-image: url(../static/icons/frame_check2.svg);
     background-repeat: no-repeat;
     background-position: right top;
