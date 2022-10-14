@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/contact.css">
-    <link rel="stylesheet" href="../style/common.css">
-    <link rel="stylesheet" href="../style/normolize.css">
+    <link rel="stylesheet" href="../style/contact.min.css">
+    <link rel="stylesheet" href="../style/common.min.css">
+    <link rel="stylesheet" href="../style/normolize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,700;1,200;1,600;1,700&display=swap" rel="stylesheet">
     <title>Contact us</title>
 </head>
-<body>
 
+
+<body>
     <div class="container">
         <header class="header">
-                <a class="header__link" href="../index.html">
-                    <svg width="102" height="52" viewBox="0 0 102 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z" fill="#1E0606"/>
-                        <path d="M47.4805 0H50.2694V49.2267H65.144V52H47.4805V0Z" fill="#1E0606"/>
-                        <path d="M68.8626 0V51.7689H71.6516V27.3833L72.3362 26.7025L97.1676 51.7689H101.083L74.3083 24.7414L99.1893 0H95.2451L71.6516 23.4612V0H68.8626Z" fill="#1E0606"/>
-                        </svg>
-                </a> 
+
+                <a class="header__link" href="../index.html"></a> 
                 <ul class="nav__list">
                     <li class="nav__list_item">
                         <a class="nav__list_link open_sans" href="../pages/blog.html">Blog</a>
                     </li>
+
                     <li class="nav__list_item">
                         <a class="nav__list_link open_sans" href="../pages/catalog.html">Catalog</a>
                     </li>
+
                     <li class="nav__list_item">
                         <a class="nav__list_link open_sans" href="#">About Us</a>  
                     </li>
-                </ul> 
+                </ul>
+
             <div class="contact__wrapper">
                 <a href="#" class="search__btn" aria-label="search">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,150 +41,166 @@
                 </a>
                 <a class="nav__contact" href="../pages/contact.html">Contact us</a>
             </div>
+
         </header>
     </div>
 
 
-        <main>
-            <div class="container">
-                <section class="bread_crumb">
-                    <h1 class="title_crubs montserrat">contact us</h1>
-                    <div class="crub_wrap">
-                        <nav class="crub_nav">
-                            <ul class="crub_ul">
-                                <li class="crub_li">
-                                    <a href="#" class="link_crub crimson_text">Home</a>
-                                </li>
-                                <li class="crub_li">
-                                    <a href="#" class="link_crub1 crimson_text">Contact Us</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </section>
+    <main>
+        <div class="container">
+            <section class="bread_crumb">
+                <h1 class="title_crubs montserrat">contact us</h1>
+                <div class="crub_wrap">
+                    <nav class="crub_nav">
+                        <ul class="crub_ul">
+                            <li class="crub_li">
+                                <a href="#" class="link_crub crimson_text">Home</a>
+                            </li>
+                            <li class="crub_li">
+                                <a href="#" class="link_crub1 crimson_text">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
 
-                <section class="section__contact_us">
-                    <form action="#" class="form__contact">
 
-                        <div class="from__wrapper">
-                            <div class="from__name">
-                                <label for="input-name">Name</label>
-                                <input type="text" id="input-name" placeholder="Ivan Ivanov" class="input_name">
-                            </div>
+        <div class="container">
+            <section class="section__contact_us">
+                <form action="#" class="form__contact">
 
-                            <div class="field__wrap">
-                                <div class="from__phone">
-                                    <label for="input-phone">Phone</label>
-                                    <input type="number" id="input-phone" class="input_phone">
-                                </div>
+                    <div class="from__wrapper">
 
-                                <div class="from__email">
-                                    <label for="input-email">Email</label>
-                                    <input type="email" id="input-email" class="input_email">
-                                </div>
-                            </div>
-
-                            <div class="from__message">
-                                <label for="textarea" class="">Message</label>
-                                <textarea name="" id="textarea" class="input_message" maxlength="400"></textarea>
-                            </div>
-
-                            <div class="from__processing">
-                                <input type="checkbox" id="input-processing" class="custom__checkbox">
-                                <label for="input-processing" class="checkbox__label">By clicking on the button, you consent to the processing of your personal data</label>
-                            </div>
-                            <button class="botton__link open_sans2" type="submit">submit</button>
+                        <div class="from__name">
+                            <label for="input-name" class="roboto">Name</label>
+                            <input type="text" id="input-name" placeholder="Ivan Ivanov" class="input_name">
                         </div>
+
+                        <div class="field__wrap">
+                            <div class="from__phone">
+                                <label for="input-phone" class="roboto">Phone</label>
+                                <input type="number" id="input-phone" class="input_phone">
+                            </div>
+
+                            <div class="from__email">
+                                <label for="input-email" class="roboto">Email</label>
+                                <input type="email" id="input-email" class="input_email">
+                            </div>
+                        </div>
+
+                        <div class="from__message">
+                            <label for="textarea" class="roboto">Message</label>
+                            <textarea id="textarea" class="input_message" maxlength="400"></textarea>
+                        </div>
+
+                        <div class="from__processing">
+                            <input type="checkbox" id="input-processing" class="custom__checkbox">
+                            <label for="input-processing" class="checkbox__label roboto">By clicking on the button, you consent to the processing of your personal data</label>
+                        </div>
+
+                        <button class="botton__link open_sans2" type="submit">submit</button>
                         
-                    </form>
-
-                    <div class="contact__wrap">
-                        <p class="contact__text open_sans">Our support team are on-hand to assist with any issues you are experiencing.</p>
-                        <p class="contact__text open_sans">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                        <h2 class="contact__title">An expert is waiting to help you!</h2>
                     </div>
-                </section>
-            </div>    
-        </main>
+                    
+                </form>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__wrap">
-                    <section class="footer__section">
-                        <h5 class="footer__title open_sans">Navigation</h5>
+                <div class="contact__wrap">
+                    <p class="contact__text open_sans">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    <p class="contact__text open_sans">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    <h2 class="contact__title">An expert is waiting to help you!</h2>
+                </div>
+
+            </section>  
+        </div>
+            
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+    
+            <div class="footer__wrap">
+                <section class="footer__section">
+                    <h5 class="footer__title open_sans">Navigation</h5>
+    
+                    <nav>
+                        <ul class="footer__list">
+                            <li class="footer__list_item">
+                                <a href="" class="footer__list-link open_sans">About Us</a>
+                            </li>
+    
+                            <li class="footer__list_item">
+                                <a href="./pages/blog.html" class="footer__list-link open_sans">Blog</a>
+                            </li>
+    
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Design Services</a>  
+                            </li>
+    
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Featured On</a>
+                            </li>
+    
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">2018 Holiday Catalog</a>
+                            </li>
+    
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Shop By Designer</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                </section>
+    
+                <section class="footer__section">
+                    <h5 class="footer__title open_sans">Customer Information</h5>
+                    
+                    <div>
                         <nav>
                             <ul class="footer__list">
                                 <li class="footer__list_item">
-                                    <a href="" class="footer__list-link open_sans">About Us</a>
+                                    <a href="./pages/contact.html" class="footer__list-link open_sans">Contact Us</a>
                                 </li>
-        
-                                <li class="footer__list_item">
-                                    <a href="./pages/blog.html" class="footer__list-link open_sans">Blog</a>
-                                </li>
-        
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Design Services</a>  
-                                </li>
-        
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Featured On</a>
-                                </li>
-        
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">2018 Holiday Catalog</a>
-                                </li>
-        
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Shop By Designer</a>
-                                </li>
+                                
                             </ul>
                         </nav>
+    
+                        <ul class="footer__list">
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Sale Exclusions</a>
+                            </li>
+            
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Shipping & Returns</a>  
+                            </li>
+            
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Terms & Conditions</a>
+                            </li>
+            
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Privacy Policy</a>
+                            </li>
+            
+                            <li class="footer__list_item">
+                                <a href="#" class="footer__list-link open_sans">Search</a>
+                            </li>
+                        </ul>
+                    </div>
+    
                 </section>
-        
-                <section class="footer__section">
-                    <h5 class="footer__title open_sans">Customer Information</h5>
-                        <div>
-                            <nav>
-                                <ul class="footer__list">
-                                    <li class="footer__list_item">
-                                        <a href="./pages/contact.html" class="footer__list-link open_sans">Contact Us</a>
-                                    </li>
-                                    
-                                </ul>
-                            </nav>
-        
-                            <ul class="footer__list">
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Sale Exclusions</a>
-                                </li>
-                
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Shipping & Returns</a>  
-                                </li>
-                
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Terms & Conditions</a>
-                                </li>
-                
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Privacy Policy</a>
-                                </li>
-                
-                                <li class="footer__list_item">
-                                    <a href="#" class="footer__list-link open_sans">Search</a>
-                                </li>
-                            </ul>
-                        </div>
-                </section>
-        
+                    
+    
                 <section class="footer__section">
                     <h5 class="footer__title open_sans">Connect</h5>
+                    
                     <form action="#">
                         <div class="footer__form-wrap">
-                            <label for="input-email">
-                                <input type="email" id="input-email" class="footer__form_input" placeholder="Email">
+                            <label for="footer-email">
+                                <input type="email" id="footer-email" class="footer__form_input" placeholder="Email">
                             </label>
-                           
                             <button type="submit" class="botton__link">join</button>
                         </div>
                     </form>
@@ -221,31 +239,35 @@
                         </li>
                     </ul>
                 </section>
-                </div>
+            </div>
+    
+            <div class="footer__bottom-wrap">
+                <div class="rating__wrap">
+                    <p class="rating__company">Company Rating</p>
         
-                <div class="footer__bottom-wrap">
-                    <div class="rating__wrap">
-                        <p class="rating__company">Company Rating</p>
-                        <div class="rating__group">
-                            <input type="radio" id="star-5" name="rating" value="5" class="rating__input">
-                            <label for="star-5" title="excellent"></label>
+                    <div class="rating__group">
+                        <input type="radio" id="star-5" name="rating" value="5" class="rating__input">
+                        <label for="star-5" title="excellent"></label>
                             
-                            <input type="radio" id="star-4" name="rating" value="4" class="rating__input">
-                            <label for="star-4" title="good"></label>
-                             
-                            <input type="radio" id="star-3" name="rating" value="3" class="rating__input">
-                            <label for="star-3" title="satisfactory"></label> 
+                        <input type="radio" id="star-4" name="rating" value="4" class="rating__input">
+                        <label for="star-4" title="good"></label>
                             
-                            <input type="radio" id="star-2" name="rating" value="2" class="rating__input">
-                            <label for="star-2" title="weakly"></label>
+                        <input type="radio" id="star-3" name="rating" value="3" class="rating__input">
+                        <label for="star-3" title="satisfactory"></label> 
                             
-                            <input type="radio" id="star-1" name="rating" value="1" class="rating__input">
-                            <label for="star-1" title="terribly"></label>
-                        </div>
+                        <input type="radio" id="star-2" name="rating" value="2" class="rating__input">
+                        <label for="star-2" title="weakly"></label>
+                            
+                        <input type="radio" id="star-1" name="rating" value="1" class="rating__input">
+                        <label for="star-1" title="terribly"></label>
                     </div>
-                    <p class="footer__bottom__text open_sans">Copyright © 2018 Dlk • Design Life Kids</p>
-                    <a href="#" class="footer__bottom__link open_sans">Web Design — Direct Line Development</a>   
+        
                 </div>
-        </footer>
+                <p class="footer__bottom__text open_sans">Copyright © 2018 Dlk • Design Life Kids</p>
+                <a href="#" class="footer__bottom__link open_sans">Web Design — Direct Line Development</a>  
+            </div>
+
+        </div>    
+    </footer>
 </body>
 </html>

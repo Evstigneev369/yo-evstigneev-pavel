@@ -2,7 +2,7 @@
 .section__contact_us {
     display: flex;  
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
 }
 .contact__wrap {
     width: 380px;

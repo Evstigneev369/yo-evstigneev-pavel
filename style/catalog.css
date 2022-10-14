@@ -13,16 +13,17 @@
     margin-right: 205px;
 }
 .catalog__li:nth-child(4) {
-    margin-left: 200px;
+    margin-left: 210px;
 }
 .Description {
-    margin: 55px 190px;
-    width: 680px;
+    margin: 59px 200px;
+    width: 645px;
+    margin-bottom: 53px;
 }
 .Description_title {
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 .Description_text {
-    margin-top: 15px;
+    margin-top: 16px;
 }
