@@ -55,11 +55,6 @@
 }
 
 
-.backdrop__checkbox+.checkbox__label::before{
-    background: #FFFFFF;
-}
-
-
 .preferences__input__wrap {
     margin-bottom: 10px;
     position: relative;

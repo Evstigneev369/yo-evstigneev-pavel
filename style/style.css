@@ -32,16 +32,19 @@
 .digits__ul {
     margin-left: 31px;
 }
+.digits__li {
+    margin-bottom: -8px;
+}
 .btn__1 {
     width: 32px;
-    height: 2px;
+    height: 3px;
     background: rgba(30, 6, 6, 0.6);
     border: none;
     cursor: pointer;
 }
 .btn {
     width: 32px;
-    height: 2px;
+    height: 3px;
     background: #D6CAC2;
     border: none;
     cursor: pointer;
@@ -222,9 +225,8 @@
 .about__wrapper {
     background: #E1F0F7;
     width: 543px;
-    height: 228px;
     padding-left: 30px;
-    margin-bottom: 155px;
+    margin-bottom: 182px;
 }
 .about__wrapper1 {
     background: #E1F0F7;

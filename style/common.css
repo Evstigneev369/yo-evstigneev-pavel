@@ -29,6 +29,13 @@
     font-size: 16px;
     line-height: 22px;
 }
+.open_sans_serifs {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
 .open_sans2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -119,6 +126,7 @@ input:disabled {
     width: 19px;
     height: 19px; 
     border: 2px solid #C29974; 
+    background: #FFFFFF;
     border-radius: 3px; 
     margin-right: 14px; 
     cursor: pointer;
@@ -200,11 +208,7 @@ input:disabled {
     opacity: 0.1;
 }
 .nav__contact {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
     color: #1E0606;
     text-transform: uppercase;
     margin-left: 19px;
@@ -260,7 +264,7 @@ input:disabled {
     border: 0;
     width: 303px;
     height: 37px;
-    padding-left: 14px;
+    padding-left: 15px;
     background-color: #666666;
     color: #FFFDFD;
 }
@@ -415,6 +419,7 @@ input:disabled {
 .catalog__img {
     width: 280px;
     height: 270px;
+    background-color: #EEE4DB;;
 }
 .catalog__item {
     position: absolute;
