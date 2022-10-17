@@ -205,10 +205,10 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            align-items: center;
 }
 .company__item {
     opacity: 0.8;
-    width: 220px;
 }
 
 
@@ -226,7 +226,8 @@
     background: #E1F0F7;
     width: 543px;
     padding-left: 30px;
-    margin-bottom: 182px;
+    padding-bottom: 27px;
+    margin-bottom: 155px;
 }
 .about__wrapper1 {
     background: #E1F0F7;

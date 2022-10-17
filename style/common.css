@@ -29,13 +29,6 @@
     font-size: 16px;
     line-height: 22px;
 }
-.open_sans_serifs {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-}
 .open_sans2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -209,6 +202,8 @@ input:disabled {
 }
 .nav__contact {
     font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
     color: #1E0606;
     text-transform: uppercase;
     margin-left: 19px;
